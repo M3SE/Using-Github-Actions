@@ -1,0 +1,11 @@
+{
+  "name": "using-github-actions",
+  "version": "1.0.0",
+  "description": "This assignment entails practicing using Github Actions for automating continuous integration\r (CI) and deployment (CD) workflows in software development projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
