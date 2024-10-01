@@ -22,10 +22,12 @@ jobs:
       - name: Build Docker Image
         run: docker build -t m3se/githubactions:latest .
 
+      # Add test execution step
+      - name: Run Tests Inside Docker Container
+        run: docker run m3se/githubactions:latest npm test  # Adjust for your test command
+
       - name: Push Docker Image to Docker Hub
         run: docker push m3se/githubactions:latest
 
       - name: Run Docker Container
         run: docker run -d -p 8080:8080 m3se/githubactions:latest
-
-
